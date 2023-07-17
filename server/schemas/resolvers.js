@@ -87,6 +87,9 @@ const resolvers = {
       });
 
       return { session: session.id };
+    },
+    users: async () => {
+      return await User.find().populate('orders.products');
     }
   },
   Mutation: {

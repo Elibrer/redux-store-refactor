@@ -70,6 +70,7 @@ export default function reducer(state = initialState, action) {
         cartOpen: false,
         cart: []
       };
+      
 
     case TOGGLE_CART:
       return {
